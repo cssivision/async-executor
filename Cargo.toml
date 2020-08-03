@@ -16,15 +16,16 @@ readme = "README.md"
 default = ["async-io"]
 
 [dependencies]
-futures-lite = "0.1.8"
-multitask = "0.2.0"
+futures-lite = "0.1.9"
+multitask = { git = "https://github.com/stjepang/multitask.git", branch = "experiment" }
 parking = "1.0.5"
 scoped-tls = "1.0.0"
 waker-fn = "1.0.0"
+easy-parallel = "3.1.0"
 
 # Optional optimization: executor waits on I/O when idle.
 [dependencies.async-io]
-version = "0.1.5"
+path = "../async-io"
 optional = true
 
 [dev-dependencies]
