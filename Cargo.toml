@@ -17,7 +17,7 @@ default = ["async-io"]
 
 [dependencies]
 futures-lite = "0.1.9"
-multitask = { path = "../multitask" }
+multitask = { git = "https://github.com/stjepang/multitask.git", branch = "experiment" }
 parking = "1.0.5"
 scoped-tls = "1.0.0"
 waker-fn = "1.0.0"
